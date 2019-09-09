@@ -1,0 +1,48 @@
+[user]
+	name = ichramm
+	email = jramirez.uy@gmail.com
+
+[github]
+	user = ichramm
+	email = jramirez.uy@gmail.com
+
+[core]
+	autocrlf = false
+	safecrlf = false
+	fileMode = true
+
+[push]
+	default = simple
+
+[branch]
+	autosetuprebase = always
+
+[color]
+	ui = true
+
+[alias]
+	df = diff -w
+	co = checkout
+	ci = commit -v
+	cia = commit -av
+	st = status
+	br = branch
+	bra = branch -a
+	lg = log -p
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	ls = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate
+	ll = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --numstat
+	lsd = log --pretty=format:%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --date=short
+	aliases = !git config -l | grep alias | cut -c 7-
+
+#
+# KDE prefix for git commands
+[url "git://anongit.kde.org/"]
+	   insteadOf = kde:
+[url "ssh://git@git.kde.org/"]
+	   pushInsteadOf = kde:
+[url "git@git.kde.org:"]
+	pushInsteadOf = kde:
+[pull]
+	rebase = true
