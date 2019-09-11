@@ -56,10 +56,13 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export WINEARCH=win32
 
 case $HOSTNAME in
-	wilderkrieger) # lenovo intraway
+	hypernova) # dell xps
+		PS1='[\[\e[1;32m\]\u@\h\[\e[0m\]][\[\e[1;32m\]\D{%a, %d %b %T}\[\e[0m\]][\[\e[1;34m\]\w\[\e[0m\]]\[\e[0;31m\]`__git_ps1`\[\e[0m\]\n\$ ';
+		;;
+	wilderkrieger) # old lenovo
 		PS1='[\[\e[0;32m\]\D{%a, %d %b %T}\[\e[0m\]][\[\e[0;32m\]\u@\h\[\e[0m\]][\[\e[1;34m\]\w\[\e[0m\]]\[\e[1;32m\]`__git_ps1`\[\e[0m\]\n\$ ';
 		;;
-	notparallel)
+	notparallel) # old sony vaio
 		PS1='\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[1;32m\]`__git_ps1 " (%s)"`\[\e[0m\]\n\$ '
 		;;
 #	*)
