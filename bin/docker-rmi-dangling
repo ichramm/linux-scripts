@@ -1,0 +1,9 @@
+#!/bin/bash
+
+IMAGES=$(docker images --filter 'dangling=true' -q)
+
+test -n "$IMAGES" && \
+  echo "Removing images $IMAGES" && \
+  docker rmi $IMAGES || \
+  echo "No dangling images to remove"
+
