@@ -6,8 +6,8 @@ set nocompatible                  " Must come first because it changes other opt
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
-set showcmd                           " Display incomplete commands.
-set showmode                          " Display the mode you're in.
+"set showcmd                           " Display incomplete commands.
+"set showmode                          " Display the mode you're in.
 
 set backspace=indent,eol,start        " Intuitive backspacing.
 
@@ -26,7 +26,9 @@ set number                            " Show line numbers.
 "set relativenumber                   " Show relative line numbers.
 
 set ruler
-set cursorline                        " Show cursor position.
+
+" makes vim slow as hell
+"set cursorline                        " Show cursor position.
 
 set incsearch                         " Highlight matches as you type.
 set hlsearch                          " Highlight matches.
