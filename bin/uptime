@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 
-import time,datetime;
+import time, datetime, os, argparse
 
-d = datetime.datetime(1,1,1) + datetime.timedelta(seconds=time.clock_gettime(time.CLOCK_MONOTONIC));
+parser = argparse.ArgumentParser(description='Actual uptime, ignoring sleep time')
+parser.add_argument("--system", action="store_true", help="Use system's uptime utility")
+args = parser.parse_args()
 
-print(f"{d.day-1} days, {d.hour} hours, {d.minute} minutes")
+if args.system:
+    os.system("/usr/bin/uptime")
+else:
+    d = datetime.datetime(1,1,1) + datetime.timedelta(seconds=time.clock_gettime(time.CLOCK_MONOTONIC));
+    print(f"{d.day-1} days, {d.hour} hours, {d.minute} minutes")
 
