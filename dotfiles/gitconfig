@@ -1,15 +1,22 @@
 [user]
 	name = ichramm
-	email = jramirez.uy@gmail.com
+	email = jramirez dot uy at gmail
 
 [github]
 	user = ichramm
-	email = jramirez.uy@gmail.com
+	email = jramirez dot uy at gmail
 
 [core]
 	autocrlf = false
 	safecrlf = false
-	fileMode = true
+  fileMode = true
+
+[merge]
+  guitool = kompare
+  tool = kompare
+
+[diff]
+  tool = kompare
 
 [rebase]  
   autostash = true
