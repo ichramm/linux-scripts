@@ -1,0 +1,4 @@
+
+# pacmd list-cards
+ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="402e", ENV{PULSE_IGNORE}="1"
+

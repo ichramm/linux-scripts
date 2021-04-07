@@ -1,10 +1,10 @@
 [user]
 	name = ichramm
-	email = jramirez dot uy at gmail
+	email = jramirez.uy@gmail.com
 
 [github]
 	user = ichramm
-	email = jramirez dot uy at gmail
+	email = jramirez.uy@gmail.com
 
 [core]
 	autocrlf = false
