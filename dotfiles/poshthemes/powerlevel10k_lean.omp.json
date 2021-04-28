@@ -3,7 +3,7 @@
   "blocks": [
     {
       "type": "prompt",
-      "alignment": "right",
+      "alignment": "left",
       "vertical_offset": -1,
       "segments": [
         {

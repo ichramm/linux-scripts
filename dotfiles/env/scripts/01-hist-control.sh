@@ -1,7 +1,7 @@
 
-export HISTSIZE=32667
+export HISTSIZE=100000
 
-export HISTFILESIZE=65535
+export HISTFILESIZE=400000
 
 export HISTCONTROL=ignoreboth
 
