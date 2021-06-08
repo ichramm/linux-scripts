@@ -1,0 +1,20 @@
+#!/bin/bash
+
+##
+##
+## Multi-purpose stop script
+
+
+target=$(echo $1 | awk '{print tolower($0)}')
+
+WIN7VM="win7 windows windows7 win7x32"
+if [[ "$WIN7VM" ==  *"$target"* ]]; then
+  VBoxManage controlvm Win7x32 savestate
+fi
+
+UBUNTUVM="ubuntu"
+if [[ "$UBUNTUVM" ==  *"$target"* ]]; then
+  VBoxManage controlvm Ubuntu savestate
+fi
+
+
