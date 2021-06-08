@@ -1,0 +1,3 @@
+[submodule "dotfiles/hedwig-dotfiles"]
+	path = dotfiles/hedwig-dotfiles
+	url = git@github.com:fedesilva/hedwig-dotfiles
