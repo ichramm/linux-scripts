@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Start Ubuntu VM
+Comment=Starts the Ubuntu virtual machine on VirtualBox
+Type=Application
+Exec=nvd /usr/lib/virtualbox/VirtualBoxVM --comment Ubuntu --startvm 7382d727-4a06-4ec6-967c-f418ad3fbad7
+Icon=/home/ichramm/devel/linux-scripts/dotfiles/desktop/os_ubuntu_x4.png
+#Icon=virtualbox-vbox.png

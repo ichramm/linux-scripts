@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Start Windows7 VM
+Comment=Starts the Windows 7 virtual machine on VirtualBox
+Type=Application
+Exec=nvd /usr/lib/virtualbox/VirtualBoxVM --comment "Windows7 x32" --startvm "{7b4b7f5e-708b-4e24-bb67-d36714462ae3}"
+Icon=/home/ichramm/devel/linux-scripts/dotfiles/desktop/os_win7_x4.png
+#Icon=virtualbox-vbox.png
