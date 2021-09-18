@@ -1,13 +1,13 @@
 #!/bin/bash
 
-excluded="VirtualBox VMs,.local,.cache,.config,.mozilla"
+excluded="VirtualBox VMs,.local,.cache,.config,.wine,.mozilla,Drive,Documents,Music,Pictures,R,octave,snap,nltk_data,Arduino"
 IFS=','
 read -a excluded <<< "$excluded"
 
 PARAMS=""
 for dir in ${excluded[@]}; do
-  PARAMS="$PARAMS --exclude='$HOME/$dir'"
+  PARAMS="$PARAMS --exclude='$HOME/$dir/*'"
 done
 
-echo tar cvzf home-ichramm.tar.gz $PARAMS $HOME
+echo $PARAMS $HOME  | xargs tar czf home-ichramm.tar.gz
 
