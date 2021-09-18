@@ -1,6 +1,7 @@
 [user]
 	name = ichramm
-	email = jramirez.uy@gmail.com
+  email = jramirez.uy@gmail.com
+	signingkey = 06F448A939C9B213
 
 [github]
 	user = ichramm
@@ -56,3 +57,7 @@
 	pushInsteadOf = kde:
 [pull]
 	rebase = true
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
