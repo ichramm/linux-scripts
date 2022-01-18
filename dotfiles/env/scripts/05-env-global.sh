@@ -11,8 +11,8 @@ export MAKEOPTS="-j2"
 #export PROMPT_COMMAND="history -n; history -a"
 
 # VIM, of course
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=micro
+export VISUAL=micro
 export GIT_EDITOR=$EDITOR
 
 # ex - archive extractor
