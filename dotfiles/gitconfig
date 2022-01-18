@@ -10,7 +10,7 @@
 [core]
 	autocrlf = false
 	safecrlf = false
-  fileMode = true
+	fileMode = true
 
 [merge]
   guitool = kompare
@@ -45,6 +45,7 @@
 	ls = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an] --decorate
 	ll = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an] --decorate --numstat
 	lsd = log --pretty=format:%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%an] --decorate --date=short
+	lsmod = !git st -uno -s | awk '{print $2}'
 	aliases = !git config -l | grep alias | cut -c 7-
 
 #
