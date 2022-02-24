@@ -22,6 +22,7 @@ alias l='ls -l'
 alias ll='ls -Al'
 
 alias grep="grep --color=tty -d skip"
+alias zgrep="zgrep --color=tty"
 
 alias df="$(which df) -h"
 alias du="$(which du) -h"
